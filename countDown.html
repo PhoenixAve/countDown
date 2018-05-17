@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>倒计时</title>
+  <style>
+    .countdown-container {
+      width: 135px;
+      height: 40px;
+      font-size: 33px;
+      color: #000;
+      background-color: #f90;
+    }
+
+    .countdown-container span {
+      width: 30px;
+      height: 40px;
+      text-align: center;
+      float: left;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-right: 2px;
+      overflow: hidden;
+      line-height: 40px;
+      background-color: rgb(224,224,224);
+    }
+
+    .countdown-container span:last-child {
+      margin-right: 0;
+    }
+
+    .countdown-container span.minutes_2 {
+      margin-right: 11px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="countdown-container">
+      <span class="minutes_1">0</span>
+      <span class="minutes_2">2</span>
+      <span class="seconds_1">5</span>
+      <span class="seconds_2">9</span>
+    </div>
+  </div>
+  <script src="./js/zepto.min.js"></script>
+  <script src="./js/countDown.js"></script>
+</body>
+
+</html>
